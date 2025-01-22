@@ -71,12 +71,5 @@ namespace RegjistriElektronik
             studentListForm.Show();
             this.Hide();
         }
-
-        private void btnReportAdmin_Click(object sender, EventArgs e)
-        {
-            ListaPjesemarrjes listaPjesemarrjeForm = new ListaPjesemarrjes(this);
-            listaPjesemarrjeForm.Show();
-            this.Hide();
-        }
     }
 }

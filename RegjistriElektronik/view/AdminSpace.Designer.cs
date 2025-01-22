@@ -35,7 +35,6 @@
             this.btnStudentList = new System.Windows.Forms.Button();
             this.btnDepartamentiAdmin = new System.Windows.Forms.Button();
             this.btnLendaAdmin = new System.Windows.Forms.Button();
-            this.btnReportAdmin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picLogoutadmin = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,7 +64,6 @@
             this.flowLayoutPanel1.Controls.Add(this.btnStudentList);
             this.flowLayoutPanel1.Controls.Add(this.btnDepartamentiAdmin);
             this.flowLayoutPanel1.Controls.Add(this.btnLendaAdmin);
-            this.flowLayoutPanel1.Controls.Add(this.btnReportAdmin);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 117);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(555, 306);
@@ -136,19 +134,6 @@
             this.btnLendaAdmin.UseVisualStyleBackColor = false;
             this.btnLendaAdmin.Click += new System.EventHandler(this.btnLendaAdmin_Click);
             // 
-            // btnReportAdmin
-            // 
-            this.btnReportAdmin.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnReportAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportAdmin.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnReportAdmin.Location = new System.Drawing.Point(234, 199);
-            this.btnReportAdmin.Name = "btnReportAdmin";
-            this.btnReportAdmin.Size = new System.Drawing.Size(306, 92);
-            this.btnReportAdmin.TabIndex = 6;
-            this.btnReportAdmin.Text = "Raportet";
-            this.btnReportAdmin.UseVisualStyleBackColor = false;
-            this.btnReportAdmin.Click += new System.EventHandler(this.btnReportAdmin_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
@@ -211,7 +196,6 @@
         private System.Windows.Forms.Button btnSekretariaAdmin;
         private System.Windows.Forms.Button btnLendaAdmin;
         private System.Windows.Forms.Button btnDepartamentiAdmin;
-        private System.Windows.Forms.Button btnReportAdmin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picLogoutadmin;
