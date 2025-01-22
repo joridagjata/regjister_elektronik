@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\FastReport.Net.Demo.2025.1.11\build\net462\FastReport.Net.Demo.props" Condition="Exists('..\packages\FastReport.Net.Demo.2025.1.11\build\net462\FastReport.Net.Demo.props')" />
+  <Import Project="..\packages\FastReport.OpenSource.2025.1.0\build\FastReport.OpenSource.props" Condition="Exists('..\packages\FastReport.OpenSource.2025.1.0\build\FastReport.OpenSource.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A31225B-83DD-4E3B-8E6D-EDC86AA058C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RegjistriElektronik</RootNamespace>
+    <AssemblyName>RegjistriElektronik</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="FastReport, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Net.Demo.2025.1.11\lib\net462\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Net.Demo.2025.1.11\lib\net462\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Compat, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Compat.2025.1.11\lib\net462\FastReport.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.DataVisualization, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.DataVisualization.2025.1.11\lib\net462\FastReport.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Net.Demo.2025.1.11\lib\net462\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.OpenSource.Export.PdfSimple, Version=2025.1.0.0, Culture=neutral, PublicKeyToken=b33a9a06fcc00c4c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.OpenSource.Export.PdfSimple.2025.1.0\lib\net462\FastReport.OpenSource.Export.PdfSimple.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.VSDesign, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Net.Demo.2025.1.11\lib\net462\FastReport.VSDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web, Version=2025.1.11.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Net.Demo.2025.1.11\lib\net462\FastReport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GrupiMesimorSekretari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrupiMesimorSekretari.Designer.cs">
+      <DependentUpon>GrupiMesimorSekretari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPjesemarrjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPjesemarrjes.Designer.cs">
+      <DependentUpon>ListaPjesemarrjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListPrezencacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListPrezencacs.Designer.cs">
+      <DependentUpon>ListPrezencacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenaxhoOrarMesimor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenaxhoOrarMesimor.Designer.cs">
+      <DependentUpon>MenaxhoOrarMesimor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\AcademicYear.cs" />
+    <Compile Include="OrariMesimorSekretari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrariMesimorSekretari.Designer.cs">
+      <DependentUpon>OrariMesimorSekretari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaportFrekuentim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaportFrekuentim.Designer.cs">
+      <DependentUpon>RaportFrekuentim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaktesoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaktesoList.Designer.cs">
+      <DependentUpon>SaktesoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\DepartamentAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DepartamentAdmin.Designer.cs">
+      <DependentUpon>DepartamentAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\LessonPlanAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\LessonPlanAdmin.Designer.cs">
+      <DependentUpon>LessonPlanAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ProfesorButtonAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ProfesorButtonAdmin.Designer.cs">
+      <DependentUpon>ProfesorButtonAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\RegjisterdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegjisterdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="view\SekretarButtonAdmincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SekretarButtonAdmincs.Designer.cs">
+      <DependentUpon>SekretarButtonAdmincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\StudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StudentList.Designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\Subject.cs" />
+    <Compile Include="view\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\AdminSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AdminSpace.Designer.cs">
+      <DependentUpon>AdminSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\LessonPlan.cs" />
+    <Compile Include="view\ProfesorSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ProfesorSpace.Designer.cs">
+      <DependentUpon>ProfesorSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\SekretariSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SekretariSpace.Designer.cs">
+      <DependentUpon>SekretariSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\StudentButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StudentButton.Designer.cs">
+      <DependentUpon>StudentButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\StudentSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StudentSpace.Designer.cs">
+      <DependentUpon>StudentSpace.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GrupiMesimorSekretari.resx">
+      <DependentUpon>GrupiMesimorSekretari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPjesemarrjes.resx">
+      <DependentUpon>ListaPjesemarrjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListPrezencacs.resx">
+      <DependentUpon>ListPrezencacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenaxhoOrarMesimor.resx">
+      <DependentUpon>MenaxhoOrarMesimor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrariMesimorSekretari.resx">
+      <DependentUpon>OrariMesimorSekretari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaportFrekuentim.resx">
+      <DependentUpon>RaportFrekuentim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaktesoList.resx">
+      <DependentUpon>SaktesoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminSpace.resx">
+      <DependentUpon>AdminSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LessonPlanAdmin.resx">
+      <DependentUpon>LessonPlanAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ProfesorButtonAdmin.resx">
+      <DependentUpon>ProfesorButtonAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ProfesorSpace.resx">
+      <DependentUpon>ProfesorSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="view\SekretarButtonAdmincs.resx">
+      <DependentUpon>SekretarButtonAdmincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\SekretariSpace.resx">
+      <DependentUpon>SekretariSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StudentButton.resx">
+      <DependentUpon>StudentButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StudentSpace.resx">
+      <DependentUpon>StudentSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="view\RegjisterdbDataSet.xsc">
+      <DependentUpon>RegjisterdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="view\RegjisterdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegjisterdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="view\RegjisterdbDataSet.xss">
+      <DependentUpon>RegjisterdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poli1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-948623158-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7124045_logout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7124045_logout_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3829792.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38297921.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\FastReport.OpenSource.2025.1.0\build\FastReport.OpenSource.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\FastReport.OpenSource.2025.1.0\build\FastReport.OpenSource.props'))" />
+    <Error Condition="!Exists('..\packages\FastReport.Net.Demo.2025.1.11\build\net462\FastReport.Net.Demo.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\FastReport.Net.Demo.2025.1.11\build\net462\FastReport.Net.Demo.props'))" />
+  </Target>
+</Project>
