@@ -65,6 +65,8 @@ namespace RegjistriElektronik
             _adminSpace.Show();
             this.Close();
         }
+
+        
     }
 }
     

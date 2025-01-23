@@ -18,6 +18,13 @@ namespace RegjistriElektronik
             InitializeComponent();
         }
 
+        private string userName;
+
+        public string getUsername()
+        {
+            return this.userName;
+        }
+
         private void btnHyr_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-1USP24N\SQLEXPRESS;Initial Catalog=Regjisterdb;Integrated Security=True;TrustServerCertificate=True");
@@ -26,6 +33,7 @@ namespace RegjistriElektronik
                 conn.Open();
                 string username = txtUsername.Text;
                 string password = txtPassword.Text;
+                this.userName = txtUsername.Text;
 
                 // Query to fetch username, password, and role
                 string query = "SELECT Username, Password, Role_id FROM Users WHERE Username = @username AND Password = @password";

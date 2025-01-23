@@ -55,6 +55,7 @@
             this.dataGridViewStudents.RowTemplate.Height = 24;
             this.dataGridViewStudents.Size = new System.Drawing.Size(902, 253);
             this.dataGridViewStudents.TabIndex = 1;
+            
             // 
             // btnLogoutStudentList
             // 

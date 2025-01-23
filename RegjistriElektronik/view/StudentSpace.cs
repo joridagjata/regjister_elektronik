@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExCSS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +13,28 @@ namespace RegjistriElektronik
 {
     public partial class StudentSpace : Form
     { 
-        private Form _loginForm;
+        private Form form;
     
         public StudentSpace(Form form)
         {
             InitializeComponent();
-        _loginForm = form;
-    }
+            this.form = form;
+        }
+
+        public string getUsername()
+        {
+            if (form.GetType() == typeof(Form1))
+            {
+                return ((Form1)form).getUsername();
+            }
+            return null;
+        }
 
         private void picLogoutstudent_Click(object sender, EventArgs e)
         {
-        _loginForm.Show();
-        this.Hide();
-
-    }
+            form.Show();
+            this.Hide();
+        }
 
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
