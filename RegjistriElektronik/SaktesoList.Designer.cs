@@ -43,13 +43,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSakteso = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.picLogoutstudent = new System.Windows.Forms.PictureBox();
+            this.picLogoutSaktesoList = new System.Windows.Forms.PictureBox();
             this.dataGridViewListPrezenca = new System.Windows.Forms.DataGridView();
             this.txtStudentCardID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoutstudent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoutSaktesoList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPrezenca)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,16 +187,17 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Sakteso List Prezencen";
             // 
-            // picLogoutstudent
+            // picLogoutSaktesoList
             // 
-            this.picLogoutstudent.BackgroundImage = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon1;
-            this.picLogoutstudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picLogoutstudent.Image = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon;
-            this.picLogoutstudent.Location = new System.Drawing.Point(826, 12);
-            this.picLogoutstudent.Name = "picLogoutstudent";
-            this.picLogoutstudent.Size = new System.Drawing.Size(43, 38);
-            this.picLogoutstudent.TabIndex = 37;
-            this.picLogoutstudent.TabStop = false;
+            this.picLogoutSaktesoList.BackgroundImage = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon1;
+            this.picLogoutSaktesoList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picLogoutSaktesoList.Image = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon;
+            this.picLogoutSaktesoList.Location = new System.Drawing.Point(826, 12);
+            this.picLogoutSaktesoList.Name = "picLogoutSaktesoList";
+            this.picLogoutSaktesoList.Size = new System.Drawing.Size(43, 38);
+            this.picLogoutSaktesoList.TabIndex = 37;
+            this.picLogoutSaktesoList.TabStop = false;
+            this.picLogoutSaktesoList.Click += new System.EventHandler(this.picLogoutSaktesoList_Click);
             // 
             // dataGridViewListPrezenca
             // 
@@ -270,13 +271,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.picLogoutstudent);
+            this.Controls.Add(this.picLogoutSaktesoList);
             this.Controls.Add(this.btnSakteso);
             this.Controls.Add(this.label1);
             this.Name = "SaktesoList";
             this.Text = "SaktesoList";
             this.Load += new System.EventHandler(this.SaktesoList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoutstudent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoutSaktesoList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPrezenca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -298,7 +299,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox picLogoutstudent;
+        private System.Windows.Forms.PictureBox picLogoutSaktesoList;
         private System.Windows.Forms.Button btnSakteso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewListPrezenca;

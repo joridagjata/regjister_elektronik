@@ -128,7 +128,7 @@
             this.btnLendaAdmin.ForeColor = System.Drawing.Color.Honeydew;
             this.btnLendaAdmin.Location = new System.Drawing.Point(3, 199);
             this.btnLendaAdmin.Name = "btnLendaAdmin";
-            this.btnLendaAdmin.Size = new System.Drawing.Size(225, 92);
+            this.btnLendaAdmin.Size = new System.Drawing.Size(536, 92);
             this.btnLendaAdmin.TabIndex = 4;
             this.btnLendaAdmin.Text = "Plani Mesimor";
             this.btnLendaAdmin.UseVisualStyleBackColor = false;

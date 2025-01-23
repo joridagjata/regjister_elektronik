@@ -137,5 +137,11 @@ namespace RegjistriElektronik
                 MessageBox.Show("Please select a Student to update.");
             }
         }
+
+        private void picLogoutSaktesoList_Click(object sender, EventArgs e)
+        {
+            profesorSpace.Show();
+            this.Close();
+        }
     }
 }

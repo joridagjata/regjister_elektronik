@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picLogoutstudent = new System.Windows.Forms.PictureBox();
             this.btnMbyll = new System.Windows.Forms.Button();
             this.btnHap = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,19 +45,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoutstudent)).BeginInit();
+            this.picLogoutMenaxhoOrarinMesimor = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoutMenaxhoOrarinMesimor)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picLogoutstudent
-            // 
-            this.picLogoutstudent.BackgroundImage = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon1;
-            this.picLogoutstudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picLogoutstudent.Image = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon;
-            this.picLogoutstudent.Location = new System.Drawing.Point(745, 19);
-            this.picLogoutstudent.Name = "picLogoutstudent";
-            this.picLogoutstudent.Size = new System.Drawing.Size(43, 38);
-            this.picLogoutstudent.TabIndex = 17;
-            this.picLogoutstudent.TabStop = false;
             // 
             // btnMbyll
             // 
@@ -215,6 +204,18 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Lenda";
             // 
+            // picLogoutMenaxhoOrarinMesimor
+            // 
+            this.picLogoutMenaxhoOrarinMesimor.BackgroundImage = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon1;
+            this.picLogoutMenaxhoOrarinMesimor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picLogoutMenaxhoOrarinMesimor.Image = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon;
+            this.picLogoutMenaxhoOrarinMesimor.Location = new System.Drawing.Point(745, 19);
+            this.picLogoutMenaxhoOrarinMesimor.Name = "picLogoutMenaxhoOrarinMesimor";
+            this.picLogoutMenaxhoOrarinMesimor.Size = new System.Drawing.Size(43, 38);
+            this.picLogoutMenaxhoOrarinMesimor.TabIndex = 17;
+            this.picLogoutMenaxhoOrarinMesimor.TabStop = false;
+            this.picLogoutMenaxhoOrarinMesimor.Click += new System.EventHandler(this.picLogoutMenaxhoOrarinMesimor_Click);
+            // 
             // MenaxhoOrarMesimor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,14 +234,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.picLogoutstudent);
+            this.Controls.Add(this.picLogoutMenaxhoOrarinMesimor);
             this.Controls.Add(this.btnMbyll);
             this.Controls.Add(this.btnHap);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "MenaxhoOrarMesimor";
             this.Text = "MenaxhoOrarMesimor";
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoutstudent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoutMenaxhoOrarinMesimor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,7 +249,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picLogoutstudent;
+        private System.Windows.Forms.PictureBox picLogoutMenaxhoOrarinMesimor;
         private System.Windows.Forms.Button btnMbyll;
         private System.Windows.Forms.Button btnHap;
         private System.Windows.Forms.Panel panel1;

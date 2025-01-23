@@ -104,5 +104,11 @@ namespace RegjistriElektronik
             }
 
         }
+
+        private void picLogoutMenaxhoOrarinMesimor_Click(object sender, EventArgs e)
+        {
+            profesorSpace.Show();
+            this.Close();
+        }
     }
 }

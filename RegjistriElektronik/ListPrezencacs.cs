@@ -74,5 +74,11 @@ namespace RegjistriElektronik
                 Console.WriteLine($"Error: {ex.Message}");
             }
         }
+
+        private void btnLogoutListPrezenca_Click(object sender, EventArgs e)
+        {
+            profesorSpace.Show();
+            this.Close();
+        }
     }
 }

@@ -26,5 +26,19 @@ namespace RegjistriElektronik
         this.Hide();
 
     }
+
+        private void btnCheckIn_Click(object sender, EventArgs e)
+        {
+            CheckinStudent form = new CheckinStudent(this);
+            form.Show();
+            this.Hide();
+        }
+
+        private void btnFrekuentimi_Click(object sender, EventArgs e)
+        {
+            FrekuentimiStudent form = new FrekuentimiStudent(this);
+            form.Show();
+            this.Hide();
+        }
     }
 }

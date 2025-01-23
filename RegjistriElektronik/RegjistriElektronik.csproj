@@ -76,6 +76,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckinStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckinStudent.Designer.cs">
+      <DependentUpon>CheckinStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrekuentimiStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrekuentimiStudent.Designer.cs">
+      <DependentUpon>FrekuentimiStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="GrupiMesimorSekretari.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     <Compile Include="view\StudentSpace.Designer.cs">
       <DependentUpon>StudentSpace.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CheckinStudent.resx">
+      <DependentUpon>CheckinStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrekuentimiStudent.resx">
+      <DependentUpon>FrekuentimiStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GrupiMesimorSekretari.resx">
       <DependentUpon>GrupiMesimorSekretari.cs</DependentUpon>
     </EmbeddedResource>

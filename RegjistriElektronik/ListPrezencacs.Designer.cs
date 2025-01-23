@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLogoutRaporteFrekuentimi = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataECheckIn = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -39,20 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogoutRaporteFrekuentimi)).BeginInit();
+            this.btnLogoutListPrezenca = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogoutListPrezenca)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnLogoutRaporteFrekuentimi
-            // 
-            this.btnLogoutRaporteFrekuentimi.BackgroundImage = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon1;
-            this.btnLogoutRaporteFrekuentimi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogoutRaporteFrekuentimi.Image = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon;
-            this.btnLogoutRaporteFrekuentimi.Location = new System.Drawing.Point(707, 15);
-            this.btnLogoutRaporteFrekuentimi.Name = "btnLogoutRaporteFrekuentimi";
-            this.btnLogoutRaporteFrekuentimi.Size = new System.Drawing.Size(49, 38);
-            this.btnLogoutRaporteFrekuentimi.TabIndex = 30;
-            this.btnLogoutRaporteFrekuentimi.TabStop = false;
             // 
             // groupBox1
             // 
@@ -157,19 +146,31 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "List Prezenca";
             // 
+            // btnLogoutListPrezenca
+            // 
+            this.btnLogoutListPrezenca.BackgroundImage = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon1;
+            this.btnLogoutListPrezenca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogoutListPrezenca.Image = global::RegjistriElektronik.Properties.Resources._7124045_logout_icon;
+            this.btnLogoutListPrezenca.Location = new System.Drawing.Point(707, 15);
+            this.btnLogoutListPrezenca.Name = "btnLogoutListPrezenca";
+            this.btnLogoutListPrezenca.Size = new System.Drawing.Size(49, 38);
+            this.btnLogoutListPrezenca.TabIndex = 30;
+            this.btnLogoutListPrezenca.TabStop = false;
+            this.btnLogoutListPrezenca.Click += new System.EventHandler(this.btnLogoutListPrezenca_Click);
+            // 
             // ListPrezencacs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnLogoutRaporteFrekuentimi);
+            this.Controls.Add(this.btnLogoutListPrezenca);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "ListPrezencacs";
             this.Text = "ListPrezencacs";
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogoutRaporteFrekuentimi)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogoutListPrezenca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +178,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox btnLogoutRaporteFrekuentimi;
+        private System.Windows.Forms.PictureBox btnLogoutListPrezenca;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dataECheckIn;
         private System.Windows.Forms.Label label8;
