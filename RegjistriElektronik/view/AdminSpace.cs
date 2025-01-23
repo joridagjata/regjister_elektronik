@@ -29,10 +29,11 @@ namespace RegjistriElektronik
 
         private void picLogoutadmin_Click(object sender, EventArgs e)
         {
-            _loginForm.Show();
+            DashboardAdmin dashboardAdmin = new DashboardAdmin(_loginForm);
+            dashboardAdmin.Show();
             this.Hide();
 
-           
+
         }
         protected override void OnFormClosed(FormClosedEventArgs e)
         {

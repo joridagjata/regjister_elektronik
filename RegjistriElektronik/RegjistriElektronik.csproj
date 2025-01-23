@@ -82,6 +82,12 @@
     <Compile Include="CheckinStudent.Designer.cs">
       <DependentUpon>CheckinStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrekuentimiStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     </Compile>
     <EmbeddedResource Include="CheckinStudent.resx">
       <DependentUpon>CheckinStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrekuentimiStudent.resx">
       <DependentUpon>FrekuentimiStudent.cs</DependentUpon>

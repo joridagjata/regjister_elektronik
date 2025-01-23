@@ -55,8 +55,8 @@ namespace RegjistriElektronik
                     
                     if (role.Equals("ADMIN", StringComparison.OrdinalIgnoreCase))
                     {
-                     AdminSpace adminSpace= new AdminSpace(this);
-                        adminSpace.Show();
+                     DashboardAdmin dashboardAdmin= new DashboardAdmin(this);
+                        dashboardAdmin.Show();
                     }
                     else if (role.Equals("SCRT", StringComparison.OrdinalIgnoreCase))
                     {

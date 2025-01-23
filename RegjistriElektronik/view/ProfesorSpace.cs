@@ -12,8 +12,8 @@ namespace RegjistriElektronik
 {
     public partial class ProfesorSpace : Form
     {
-        private Form1 _loginForm;
-        public ProfesorSpace(Form1 loginForm)
+        private Form _loginForm;
+        public ProfesorSpace(Form loginForm)
         {
             InitializeComponent();
             _loginForm = loginForm;

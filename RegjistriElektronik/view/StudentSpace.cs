@@ -12,9 +12,9 @@ namespace RegjistriElektronik
 {
     public partial class StudentSpace : Form
     { 
-        private Form1 _loginForm;
+        private Form _loginForm;
     
-        public StudentSpace(Form1 form)
+        public StudentSpace(Form form)
         {
             InitializeComponent();
         _loginForm = form;

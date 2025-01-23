@@ -12,8 +12,8 @@ namespace RegjistriElektronik
 {
     public partial class SekretariSpace : Form
     {
-        private Form1 _loginForm;
-        public SekretariSpace(Form1 form)
+        private Form _loginForm;
+        public SekretariSpace(Form form)
         {
             InitializeComponent();
             _loginForm = form;
