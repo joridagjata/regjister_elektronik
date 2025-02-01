@@ -78,8 +78,8 @@ namespace RegjistriElektronik
                     cmd.ExecuteNonQuery();
                 }
                 //Gjeneron nje kod unik, i cili do te perfaqesoje CARD_ID
-                Guid uuid = Guid.NewGuid();
-                string CARD_ID = uuid.ToString();
+                Guid generatedId = Guid.NewGuid();
+                string CARD_ID = generatedId.ToString();
 
                 string queryInsertProfesor = " INSERT INTO STUDENT(USER_ID, CARD_ID, GROUP_ID)" +
                                                 " VALUES ((select id from users where username = @Username) " +

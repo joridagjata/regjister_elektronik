@@ -110,12 +110,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckinStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CheckinStudent.Designer.cs">
-      <DependentUpon>CheckinStudent.cs</DependentUpon>
-    </Compile>
     <Compile Include="DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,9 +234,6 @@
     <Compile Include="view\StudentSpace.Designer.cs">
       <DependentUpon>StudentSpace.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CheckinStudent.resx">
-      <DependentUpon>CheckinStudent.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdmin.resx">
       <DependentUpon>DashboardAdmin.cs</DependentUpon>
     </EmbeddedResource>

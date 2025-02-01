@@ -85,14 +85,14 @@ namespace RegjistriElektronik
 
                         conn.Open();
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Professor updated successfully.");
+                        MessageBox.Show("Secretar updated successfully.");
                         LoadSekretarData(); // Refresh the list
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Please select a professor to update.");
+                MessageBox.Show("Please select a secretar to update.");
             }
         }
 

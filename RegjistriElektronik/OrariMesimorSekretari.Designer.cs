@@ -35,13 +35,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxDitaeJaves = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtLenda = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtSalla = new System.Windows.Forms.TextBox();
-            this.txtGrupiMesimor = new System.Windows.Forms.TextBox();
-            this.txtProfesor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +47,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogoutOrarMesimor = new System.Windows.Forms.PictureBox();
             this.picLogoutadmin = new System.Windows.Forms.PictureBox();
+            this.comboBoxLendet = new System.Windows.Forms.ComboBox();
+            this.comboBoxGrupet = new System.Windows.Forms.ComboBox();
+            this.comboBoxProfesoret = new System.Windows.Forms.ComboBox();
+            this.comboBoxDepartament = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrarMesimor)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogoutOrarMesimor)).BeginInit();
@@ -69,18 +71,20 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.comboBoxDepartament);
+            this.groupBox1.Controls.Add(this.comboBoxProfesoret);
+            this.groupBox1.Controls.Add(this.comboBoxGrupet);
+            this.groupBox1.Controls.Add(this.comboBoxLendet);
             this.groupBox1.Controls.Add(this.txtNeOre);
             this.groupBox1.Controls.Add(this.txtNgaOra);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBoxDitaeJaves);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtLenda);
             this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.txtSalla);
-            this.groupBox1.Controls.Add(this.txtGrupiMesimor);
-            this.groupBox1.Controls.Add(this.txtProfesor);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -88,9 +92,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.groupBox1.Location = new System.Drawing.Point(-18, 62);
+            this.groupBox1.Location = new System.Drawing.Point(-3, 62);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(826, 286);
+            this.groupBox1.Size = new System.Drawing.Size(811, 286);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orari Mesimor";
@@ -136,18 +140,11 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Dita e Javes";
             // 
-            // txtLenda
-            // 
-            this.txtLenda.Location = new System.Drawing.Point(108, 59);
-            this.txtLenda.Name = "txtLenda";
-            this.txtLenda.Size = new System.Drawing.Size(350, 22);
-            this.txtLenda.TabIndex = 14;
-            // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Berlin Sans FB Demi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnDelete.Location = new System.Drawing.Point(580, 192);
+            this.btnDelete.Location = new System.Drawing.Point(633, 160);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(98, 37);
             this.btnDelete.TabIndex = 13;
@@ -159,7 +156,7 @@
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Berlin Sans FB Demi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnUpdate.Location = new System.Drawing.Point(586, 126);
+            this.btnUpdate.Location = new System.Drawing.Point(633, 107);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(92, 37);
             this.btnUpdate.TabIndex = 12;
@@ -171,7 +168,7 @@
             // 
             this.btnAdd.Font = new System.Drawing.Font("Berlin Sans FB Demi", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnAdd.Location = new System.Drawing.Point(578, 50);
+            this.btnAdd.Location = new System.Drawing.Point(631, 46);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 37);
             this.btnAdd.TabIndex = 11;
@@ -185,20 +182,6 @@
             this.txtSalla.Name = "txtSalla";
             this.txtSalla.Size = new System.Drawing.Size(350, 22);
             this.txtSalla.TabIndex = 9;
-            // 
-            // txtGrupiMesimor
-            // 
-            this.txtGrupiMesimor.Location = new System.Drawing.Point(199, 92);
-            this.txtGrupiMesimor.Name = "txtGrupiMesimor";
-            this.txtGrupiMesimor.Size = new System.Drawing.Size(259, 22);
-            this.txtGrupiMesimor.TabIndex = 8;
-            // 
-            // txtProfesor
-            // 
-            this.txtProfesor.Location = new System.Drawing.Point(229, 133);
-            this.txtProfesor.Name = "txtProfesor";
-            this.txtProfesor.Size = new System.Drawing.Size(229, 22);
-            this.txtProfesor.TabIndex = 7;
             // 
             // label6
             // 
@@ -214,7 +197,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 94);
+            this.label5.Location = new System.Drawing.Point(28, 94);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 20);
             this.label5.TabIndex = 3;
@@ -224,7 +207,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 135);
+            this.label4.Location = new System.Drawing.Point(22, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 20);
             this.label4.TabIndex = 2;
@@ -234,7 +217,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 59);
+            this.label3.Location = new System.Drawing.Point(32, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 1;
@@ -284,6 +267,52 @@
             this.picLogoutadmin.TabIndex = 26;
             this.picLogoutadmin.TabStop = false;
             // 
+            // comboBoxLendet
+            // 
+            this.comboBoxLendet.FormattingEnabled = true;
+            this.comboBoxLendet.Location = new System.Drawing.Point(171, 55);
+            this.comboBoxLendet.Name = "comboBoxLendet";
+            this.comboBoxLendet.Size = new System.Drawing.Size(331, 24);
+            this.comboBoxLendet.TabIndex = 20;
+            this.comboBoxLendet.SelectedIndexChanged += new System.EventHandler(this.comboBoxLendet_SelectedIndexChanged);
+            // 
+            // comboBoxGrupet
+            // 
+            this.comboBoxGrupet.FormattingEnabled = true;
+            this.comboBoxGrupet.Location = new System.Drawing.Point(171, 90);
+            this.comboBoxGrupet.Name = "comboBoxGrupet";
+            this.comboBoxGrupet.Size = new System.Drawing.Size(331, 24);
+            this.comboBoxGrupet.TabIndex = 21;
+            this.comboBoxGrupet.SelectedIndexChanged += new System.EventHandler(this.comboBoxGrupet_SelectedIndexChanged);
+            // 
+            // comboBoxProfesoret
+            // 
+            this.comboBoxProfesoret.FormattingEnabled = true;
+            this.comboBoxProfesoret.Location = new System.Drawing.Point(200, 131);
+            this.comboBoxProfesoret.Name = "comboBoxProfesoret";
+            this.comboBoxProfesoret.Size = new System.Drawing.Size(302, 24);
+            this.comboBoxProfesoret.TabIndex = 22;
+            this.comboBoxProfesoret.SelectedIndexChanged += new System.EventHandler(this.comboBoxProfesoret_SelectedIndexChanged);
+            // 
+            // comboBoxDepartament
+            // 
+            this.comboBoxDepartament.FormattingEnabled = true;
+            this.comboBoxDepartament.Location = new System.Drawing.Point(171, 21);
+            this.comboBoxDepartament.Name = "comboBoxDepartament";
+            this.comboBoxDepartament.Size = new System.Drawing.Size(331, 24);
+            this.comboBoxDepartament.TabIndex = 23;
+            this.comboBoxDepartament.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartament_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(28, 25);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 20);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Departament";
+            // 
             // OrariMesimorSekretari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -316,20 +345,22 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtSalla;
-        private System.Windows.Forms.TextBox txtGrupiMesimor;
-        private System.Windows.Forms.TextBox txtProfesor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtLenda;
         private System.Windows.Forms.TextBox textBoxDitaeJaves;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtNeOre;
         private System.Windows.Forms.TextBox txtNgaOra;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox btnLogoutOrarMesimor;
+        private System.Windows.Forms.ComboBox comboBoxDepartament;
+        private System.Windows.Forms.ComboBox comboBoxProfesoret;
+        private System.Windows.Forms.ComboBox comboBoxGrupet;
+        private System.Windows.Forms.ComboBox comboBoxLendet;
+        private System.Windows.Forms.Label label9;
     }
 }

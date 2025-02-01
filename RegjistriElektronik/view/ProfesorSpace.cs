@@ -12,16 +12,25 @@ namespace RegjistriElektronik
 {
     public partial class ProfesorSpace : Form
     {
-        private Form _loginForm;
+        private Form form;
         public ProfesorSpace(Form loginForm)
         {
             InitializeComponent();
-            _loginForm = loginForm;
+            form = loginForm;
+        }
+
+        public string getUsername()
+        {
+            if (form.GetType() == typeof(Form1))
+            {
+                return ((Form1)form).getUsername();
+            }
+            return null;
         }
 
         private void picLogoutPetagog_Click(object sender, EventArgs e)
         {
-            _loginForm.Show();
+            form.Show();
             this.Hide();
         }
 

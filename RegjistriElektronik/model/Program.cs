@@ -66,7 +66,7 @@ namespace RegjistriElektronik
                 var requestData = JsonSerializer.Deserialize<RequestData>(requestBody);
                 if (string.IsNullOrEmpty(requestData?.CardId))
                 {
-                    response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    response.StatusCode = (int) HttpStatusCode.BadRequest;
                     byte[] errorBuffer = Encoding.UTF8.GetBytes("Error: Missing 'cardId' parameter.");
                     response.OutputStream.Write(errorBuffer, 0, errorBuffer.Length);
                 }
@@ -114,14 +114,14 @@ namespace RegjistriElektronik
                     " ( SELECT o.ID FROM ORAR_MESIMOR o " +
                     "       INNER JOIN LENDET l on l.ID = o.LENDA_ID " +
                     "       INNER JOIN GROUPS g ON g.ID = o.GROUP_ID " +
-                    "       WHERE l.EMER = @lenda AND g.CODE = @grupi and o.DITA_E_JAVES = @ditaEJaves ), " +
+                    "       WHERE l.EMER = @lenda AND g.CODE = @grupi and o.DITA_E_JAVES = @ditaEJaves and STATUS = 1 ), " +
                     " 1, CAST(GETDATE() AS DATE)" +
                     ")" +
                     "";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@CardId", cardId);
+                    command.Parameters.AddWithValue("@cardId", cardId);
                     command.Parameters.AddWithValue("@lenda", lenda);
                     command.Parameters.AddWithValue("@grupi", grupi);
                     command.Parameters.AddWithValue("@ditaEJaves", ditaEJaves);
