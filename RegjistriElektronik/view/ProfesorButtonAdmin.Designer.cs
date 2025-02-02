@@ -30,6 +30,7 @@
         {
             this.dataGridViewProfessors = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxDepartament = new System.Windows.Forms.ComboBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtDepartament = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtEmriProfesorit = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxDepartament);
             this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btnDelete);
@@ -74,7 +75,6 @@
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnRefresh);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtDepartament);
             this.groupBox1.Controls.Add(this.txtUsername);
             this.groupBox1.Controls.Add(this.txtEmriProfesorit);
             this.groupBox1.Controls.Add(this.label6);
@@ -90,6 +90,15 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Profesor Information";
+            // 
+            // comboBoxDepartament
+            // 
+            this.comboBoxDepartament.FormattingEnabled = true;
+            this.comboBoxDepartament.Location = new System.Drawing.Point(154, 141);
+            this.comboBoxDepartament.Name = "comboBoxDepartament";
+            this.comboBoxDepartament.Size = new System.Drawing.Size(317, 24);
+            this.comboBoxDepartament.TabIndex = 18;
+            this.comboBoxDepartament.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartament_SelectedIndexChanged);
             // 
             // txtPassword
             // 
@@ -162,13 +171,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(369, 22);
             this.txtEmail.TabIndex = 9;
-            // 
-            // txtDepartament
-            // 
-            this.txtDepartament.Location = new System.Drawing.Point(161, 143);
-            this.txtDepartament.Name = "txtDepartament";
-            this.txtDepartament.Size = new System.Drawing.Size(310, 22);
-            this.txtDepartament.TabIndex = 8;
             // 
             // txtUsername
             // 
@@ -287,7 +289,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtDepartament;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtEmriProfesorit;
         private System.Windows.Forms.Label label6;
@@ -299,5 +300,6 @@
         private System.Windows.Forms.PictureBox picLogoutadmin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxDepartament;
     }
 }
