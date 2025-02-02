@@ -23,7 +23,8 @@ namespace RegjistriElektronik
         {
             InitializeComponent();
             this.profesorSpace = profesorSpace;
-            loadComboBox();
+            if (profesorSpace != null && !string.IsNullOrEmpty(profesorSpace.getUsername())){ loadComboBox(); }
+
         }
 
         private void btnHap_Click(object sender, EventArgs e)
@@ -73,7 +74,7 @@ namespace RegjistriElektronik
                            "   WHEN o.DITA_E_JAVES = 5 THEN 'E PREMTE' " +
                            "   ELSE 'ERROR' END, ' ', o.NGA_ORA, ' - ', o.DERI_NE_ORA) AS ORAR_NAME " +
                            "FROM ORAR_MESIMOR o " +
-                           "INNER JOIN PROFESOR p ON o.PROFESOR_ID = p.DEPARTAMENT_ID " +
+                           "INNER JOIN PROFESOR p ON o.PROFESOR_ID = p.ID " +
                            "INNER JOIN LENDET l ON l.ID = o.LENDA_ID " +
                            "INNER JOIN GROUPS g ON g.ID = o.GROUP_ID " +
                            "INNER JOIN SALLA s ON s.ID = o.SALLA_ID " +

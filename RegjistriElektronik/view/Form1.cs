@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace RegjistriElektronik
 {
@@ -35,7 +36,7 @@ namespace RegjistriElektronik
                 string password = txtPassword.Text;
                 this.userName = txtUsername.Text;
 
-                // Query to fetch username, password, and role
+                //Kërkesa(Query) për të marrë emrin e përdoruesit, fjalëkalimin dhe rolin
                 string query = "SELECT Username, Password, Role_id FROM Users WHERE Username = @username AND Password = @password";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@username", username);

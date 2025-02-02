@@ -28,7 +28,7 @@ namespace RegjistriElektronik
             // Kthehuni në formën AdminSpace dhe mbyllni formën aktuale
             AdminSpace adminForm = new AdminSpace(_loginForm); // Sigurohuni që të kaloni formën e login-it nëse është e nevojshme
             adminForm.Show();
-            this.Close();  // Mbyllni formën DepartamentAdmin
+            this.Close();  // Mbyllni formën profesorAdmin
         }
 
         private void ProfesorButtonAdmin_Load(object sender, EventArgs e)
